@@ -33,7 +33,7 @@ chmod +x Xilinx_Unified_2021.1_0610_2318_Lin64.bin
 - Em seguida execute o comando: 
 
 ```
-bash ./Xilinx_Unified_2021.1_0610_2318_Lin64.bin
+sudo ./Xilinx_Unified_2021.1_0610_2318_Lin64.bin
 ```
 
 - Apos o comando uma interface surgira para proseguir com a instalação.
