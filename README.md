@@ -36,4 +36,7 @@ chmod +x Xilinx_Unified_2021.1_0610_2318_Lin64.bin
 sudo ./Xilinx_Unified_2021.1_0610_2318_Lin64.bin
 ```
 
-- Apos o comando uma interface surgira para proseguir com a instalação.
+- Apos o comando uma interface surgira para proseguir com a instalação comforme a imagem a seguir:
+
+![interface_vivado]()
+
