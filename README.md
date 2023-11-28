@@ -6,6 +6,7 @@
 - matlab 2021a
 - Vivado 2021.1
 - Python 3.8
+- git
 - mlib_devel branch: m2021a
 - Anaconda
 
@@ -54,8 +55,6 @@ sudo ./Xilinx_Unified_2021.1_0610_2318_Lin64.bin
 
 - Em seguida click em Next para continuar com o processo de instalação
 
-
-
 ## Anaconda
 
 - instale os Pré-requisitos do anaconda:
@@ -85,3 +84,55 @@ bash ~/Downloads/Anaconda3-2020.05-Linux-x86_64.sh
 Em seguida para finalizar o processo de instalação siga as struções contidas no link a seguir: [LINK](https://docs.anaconda.com/free/anaconda/install/linux/#:~:text=To%20install%2C%20run%20the%20following%20command%2C%20depending%20on%20your%20Linux%20architecture%3A)
 
 
+##  mlib_devel branch: m2021a
+
+- Para baixar esse repositorio execute o comando a seguir:
+
+```
+git clone -b m2021a https://github.com/casper-astro.mlib_devel
+```
+
+- Agora será necessario criar um ambiente virtual para instalar as bibliotecas python necessarias para execcutar o mlib_devel, para isso execute o comando a seguir:
+
+
+```
+conda create -m mlib_devel_env
+```
+- para ativar o ambiente virtual execute o comando a seguir:
+
+```
+conda activate mlib_devel_env
+```
+
+- instale o suporte a pip3 para isso execute o comando a seguir:
+
+```bash
+sudo apt-get install python3 python3-pip
+```
+
+- Em seguida dentro do diretorio mlib_devel execute o comando a seguir:
+
+```
+pip3 install -r requirements.txt
+```
+
+- Em seguida dentro do diretorio mlib_devel é necessario criar um arquivo para definir o PATH do vivado e matlab. Para isso execute o comando a seguir:
+
+```bash
+sudo nano startsg.local
+```
+
+ - Dentro do arquivo startsg.local insira o texto a seguir:
+
+ ```bash
+    export XILINX_PATH=/opt/Xilinx/Vivado/2021.1
+    export COMPOSER_PATH=/opt/Xilinx/Model_Composer/2021.1
+    export MATLAB_PATH=/usr/local/MATLAB/R2021a
+    export PLATFORM=lin64
+    export JASPER_BACKEND=vivado
+
+    # over-ride the MATLAB libexpat version with the OS's one.
+    # Using LD_PRELOAD=${LD_PRELOAD}:"..." rather than just LD_PRELOAD="..."
+    # ensures that we preserve any other settings already configured
+    export LD_PRELOAD=${LD_PRELOAD}:"/usr/lib/x86_64-linux-gnu/libexpat.so"
+ ```
