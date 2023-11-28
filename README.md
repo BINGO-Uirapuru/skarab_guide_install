@@ -119,10 +119,10 @@ pip3 install -r requirements.txt
 - Em seguida dentro do diretorio mlib_devel é necessario criar um arquivo para definir o PATH do vivado e matlab. Para isso execute o comando a seguir:
 
 ```bash
-sudo nano startsg.local
+nano startsg.local
 ```
 
- - Dentro do arquivo startsg.local insira o texto a seguir:
+ - Dentro do arquivo startsg.local insira o texto a seguir, o PATH de cada programa deve ser de acordo com o caminho da instalação do programa:
 
  ```bash
     export XILINX_PATH=/opt/Xilinx/Vivado/2021.1
@@ -135,4 +135,20 @@ sudo nano startsg.local
     # Using LD_PRELOAD=${LD_PRELOAD}:"..." rather than just LD_PRELOAD="..."
     # ensures that we preserve any other settings already configured
     export LD_PRELOAD=${LD_PRELOAD}:"/usr/lib/x86_64-linux-gnu/libexpat.so"
+ ```
+
+ - Salve o arquivo com o comando Ctrl+X e o feche 
+
+ - Forneça permissão de execução ao arquivo, para isso execute o comando a seguir:
+
+ ```
+sudo chmod +x startsg.local 
+ ```
+
+ com isso feito o mlib_devel já está configurado
+
+ Para executalo o mlib_devel use o comando a seguir:
+
+ ```
+ ./startsg startsg.local
  ```
