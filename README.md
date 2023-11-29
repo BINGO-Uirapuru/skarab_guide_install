@@ -4,7 +4,17 @@
 
 - [hardwere skarab](https://github.com/casper-astro/casper-hardware/tree/master/FPGA_Hosts/SKARAB)
 
-- CONECTORES
+#### CONECTOR:
+
+- MODELO: RG/RGC-213 PINO FÊMEA
+- FABRICANTE: [KLC conectores](https://www.klc.ind.br/2013/index.php)
+- [DATASHEET](https://www.klc.ind.br/2013/produto_salvar_desenho.php?id=518)
+
+#### CABEAMENTO:
+
+- RG213
+- FABRICANTE: [Alpha Wire](https://www.alphawire.com/)
+- [DATASHEET](https://www.digikey.com.br/en/products/detail/alpha-wire/9213-BK005/3717647?utm_source=findchips&utm_medium=aggregator&WT.z_cid=ref_findchips_standard&utm_campaign=buynow)
 
 ## ESPECIFICAÇÕES DE SOFTWARE
 
