@@ -1,5 +1,11 @@
 # skarab_guide_install
 
+## ESPECIFICAÇÕES DE HARDWERE
+
+- [hardwere skarab](https://github.com/casper-astro/casper-hardware/tree/master/FPGA_Hosts/SKARAB)
+
+- CONECTORES
+
 ## ESPECIFICAÇÕES DE SOFTWARE
 
 - ubuntu 20.04
@@ -51,9 +57,11 @@ sudo ./Xilinx_Unified_2021.1_0610_2318_Lin64.bin
 
 ![terceira_tela](/figuras/foto3.png)
 
-- nessa interface selecionamos o destino dos arquivos de instalação do vivado e a plataforma de instalação, em nosso caso deixaremos a configuração padrão.
+- nessa interface selecionamos o destino dos arquivos de instalação do vivado(PATH) e a plataforma de instalação, em nosso caso deixaremos a configuração padrão.
 
 - Em seguida click em Next para continuar com o processo de instalação
+
+
 
 ## Anaconda
 
@@ -152,3 +160,14 @@ sudo chmod +x startsg.local
  ```
  ./startsg startsg.local
  ```
+
+ Isso Iniciara o matlab com todos os programas necessarios para compilar o arquivo para a skarab
+
+ - No terminal do matlab digite o comando a seguir e precione enter:
+
+ ```matlab
+ simulink
+ ```
+
+para continuar com o procedimento de criação do programa em blocos e compilação do arquivo para a skarab siga as instruções contidas no tutorial a seguir: [LINK](https://casper-toolflow.readthedocs.io/projects/tutorials/en/latest/tutorials/snap/tut_intro.html)
+
