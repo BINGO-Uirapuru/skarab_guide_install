@@ -35,6 +35,20 @@
  - Baixe e instale o matlab 2021a: [LINK](https://www.mathworks.com/products/new_products/release2021a.html)
 
 
+## git
+
+- Para Instalar o git execute o comando a seguir:
+
+```bash
+sudo apt-get update
+```
+
+```bash
+sudo apt-get install git-all
+```
+
+
+
 ## Vivado 2021.1
 
 - crie uma conta do site da [AMD](https://www.amd.com/en.html)
